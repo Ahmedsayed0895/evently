@@ -1,5 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:evently/login_screen.dart';
 import 'package:evently/provider.dart';
+import 'package:evently/reg_screen.dart';
 import 'package:evently/starting_screen.dart';
 import 'package:evently/theme/base_theme.dart';
 import 'package:evently/theme/dark_theme.dart';
@@ -38,9 +40,11 @@ class EventlyApp extends StatelessWidget {
       locale: context.locale,
       debugShowCheckedModeBanner: false,
       routes: {
-        StartingScreen.rout: (context) => StartingScreen(),
+        StartingScreen.route: (context) => StartingScreen(),
+        LoginScreen.route: (context) => LoginScreen(),
+        RegScreen.route: (context) => RegScreen(),
       },
-      initialRoute: StartingScreen.rout,
+      initialRoute: StartingScreen.route,
       theme: lightTheme.themeData,
       darkTheme: darkTheme.themeData,
       themeMode: provider.themeMode,

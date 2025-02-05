@@ -18,6 +18,7 @@ class LightTheme extends BaseTheme {
   @override
   // TODO: implement themeData
   ThemeData get themeData => ThemeData(
+        focusColor: Color(0xff7B7B7B),
         primaryColor: primaryColor,
         scaffoldBackgroundColor: backgroundColor,
         appBarTheme: AppBarTheme(

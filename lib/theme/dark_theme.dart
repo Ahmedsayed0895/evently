@@ -18,6 +18,7 @@ class DarkTheme extends BaseTheme {
   @override
   // TODO: implement themeData
   ThemeData get themeData => ThemeData(
+        focusColor: primaryColor,
         primaryColor: primaryColor,
         scaffoldBackgroundColor: backgroundColor,
         appBarTheme: AppBarTheme(
